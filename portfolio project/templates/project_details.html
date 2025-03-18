@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="comic-title">{{ project.name }}</h1>
+    
+    <!-- Full-width Project Image -->
+    <div class="project-image">
+        <img src="{{ url_for('static', filename='images/' + project.image) }}" alt="{{ project.name }}">
+    </div>
+
+    <!-- Project Details Section -->
+    <div class="project-details">
+        <p>{{ project.description }}</p>
+
+        <!-- Project Features -->
+        <h3>Project Features:</h3>
+        <ul>
+            {% for feature in project.features %}
+                <li>✔ {{ feature }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Project Links -->
+        <h3>Links:</h3>
+        <a href="{{ project.live_demo }}" class="comic-button" target="_blank">Live Demo</a>
+        <a href="{{ project.github_repo }}" class="comic-button" target="_blank">GitHub Repo</a>
+    </div>
+
+    <!-- Back to Projects Button -->
+    <div class="back-to-projects">
+        <a href="{{ url_for('projects_page') }}" class="comic-button">Back to Projects</a>
+    </div>
+</div>
+{% endblock %}

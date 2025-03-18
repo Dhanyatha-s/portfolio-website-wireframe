@@ -1,0 +1,53 @@
+/* Comic-style speech bubble effect */
+.speech-bubble {
+    position: relative;
+    background: yellow;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: black;
+}
+
+/* Comic-style button */
+.comic-btn {
+    background: red;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: 'SuperComic', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.comic-btn:hover {
+    background: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Project Cards */
+.project-card {
+    background: white;
+    border: 3px solid black;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    box-shadow: 5px 5px 0px black;
+    transform: translate(-3px, -3px);
+}
+
+

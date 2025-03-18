@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Comic Portfolio</title>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Bootstrap for Responsive Design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comic_fonts.css') }}">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="text-center p-4 bg-light shadow-sm">
+        <h1 class="comic-title">Welcome to My Comic Portfolio!</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="/">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('projects_page') }}">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('skills') }}">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact_page') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-light">
+        <p>Created in a Comic World 🌟</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</html>

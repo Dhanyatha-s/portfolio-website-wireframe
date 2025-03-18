@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Skills - Comic Portfolio{% endblock %}
+
+{% block content %}
+<section class="skills">
+    <h2 class="comic-heading">🛠 My Superpowers (Skills)</h2>
+
+    <div class="skills-container">
+        <!-- Coding & Development -->
+        <div class="skill-category comic-bubble">
+            <h3>💻 Coding & Development</h3>
+            <label><input type="checkbox" checked> Python <span class="level">⭐⭐⭐⭐⭐</span></label>
+            <label><input type="checkbox" checked> Flask <span class="level">⭐⭐⭐⭐</span></label>
+            <label><input type="checkbox" checked> JavaScript <span class="level">⭐⭐⭐</span></label>
+            <label><input type="checkbox" checked> HTML & CSS <span class="level">⭐⭐⭐⭐</span></label>
+        </div>
+
+        <!-- UI/UX & Design -->
+        <div class="skill-category comic-bubble">
+            <h3>🎨 UI/UX & Design</h3>
+            <label><input type="checkbox" checked> Figma <span class="level">⭐⭐⭐⭐</span></label>
+            <label><input type="checkbox" checked> Adobe XD <span class="level">⭐⭐⭐</span></label>
+            <label><input type="checkbox" checked> Canva <span class="level">⭐⭐⭐⭐⭐</span></label>
+        </div>
+
+        <!-- Data & Analytics -->
+        <div class="skill-category comic-bubble">
+            <h3>📊 Data & Analytics</h3>
+            <label><input type="checkbox" checked> SQL <span class="level">⭐⭐⭐⭐</span></label>
+            <label><input type="checkbox" checked> Pandas <span class="level">⭐⭐⭐⭐</span></label>
+            <label><input type="checkbox" checked> PowerBI <span class="level">⭐⭐⭐</span></label>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,14 @@
+
+
+@font-face {
+    font-family: 'SuperComic';
+    src: url('../fonts/Super_Comic.otf') format('opentype');
+}
+
+body {
+    font-family: 'SuperComic', sans-serif;
+    background-color: #FDE047;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Comic Portfolio{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <h2 class="comic-heading">📩 Get in Touch</h2>
+
+    <div class="contact-container">
+        <!-- Contact Info Section -->
+        <div class="contact-details comic-bubble">
+            <h3>📞 Contact Information</h3>
+            <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Location:</strong> Gotham City, Comic World</p>
+            <h4>🔗 Follow Me</h4>
+            <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank" class="comic-btn">LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="comic-btn">GitHub</a>
+                <a href="https://behance.net" target="_blank" class="comic-btn">Behance</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+            <form class="contact-form comic-bubble">
+                <h3>✉ Send a Message</h3>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+                <button type="submit" class="comic-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
